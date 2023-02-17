@@ -51,11 +51,11 @@ function Dashboard() {
         <form onSubmit={findBmi}>
           <div>
             <label>Weight {unit === "Metric" ? "(kg)" : "(lbs)"}</label>
-            <input onChange={(e) => setWeight(e.target.value)} placeholder = "0"/>
+            <input type = "number" onChange={(e) => setWeight(e.target.value)} placeholder = "0"/>
           </div>
           <div>
             <label>Height {unit === "Metric" ? "(cm)" : "(in)"}</label>
-            <input  onChange={(e) => setHeight(e.target.value)} placeholder = "0" />
+            <input  type = "number" onChange={(e) => setHeight(e.target.value)} placeholder = "0" />
           </div>
           <div>
             <button className='btn' type='submit'>Submit</button>

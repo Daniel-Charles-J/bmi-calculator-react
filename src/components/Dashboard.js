@@ -38,10 +38,6 @@ function Dashboard() {
           }
         }
       }
-    
-      const clear = (e) => {
-        window.location.reload()
-      }
 
   return (
     <div className="main-container">
@@ -59,7 +55,7 @@ function Dashboard() {
           </div>
           <div>
             <button className='btn' type='submit'>Submit</button>
-            <button className='btn btn-refresh' onClick={clear} type='submit'>Clear</button>
+            <button className='btn btn-refresh' type="reset">Clear</button>
           </div>
         </form>
 

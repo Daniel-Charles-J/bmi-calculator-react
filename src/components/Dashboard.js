@@ -38,6 +38,11 @@ function Dashboard() {
           }
         }
       }
+    
+      const clear = (e) => {
+        setBmiValue("");
+        setMessage("");
+      }
 
   return (
     <div className="main-container">
@@ -55,7 +60,7 @@ function Dashboard() {
           </div>
           <div>
             <button className='btn' type='submit'>Submit</button>
-            <button className='btn btn-refresh' type="reset">Clear</button>
+            <button className='btn btn-refresh' onClick={clear} type="reset">Clear</button>
           </div>
         </form>
 
